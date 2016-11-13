@@ -1,0 +1,7 @@
+<h2>{{model.name}} {{model.id}}</h2>
+
+<button {{action "save" model}}>Create new test</button>
+
+{{#each model.tfeatures as |tfeature|}}
+    <p>{{tfeature.name}} {{tfeature.id}}</p>
+{{/each}}

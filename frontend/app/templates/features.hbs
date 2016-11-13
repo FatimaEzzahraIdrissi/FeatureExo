@@ -1,0 +1,6 @@
+<button {{action 'save'}}>Create new feature</button>
+{{#each model as |feature|}}
+  {{#link-to 'tfeatures' feature}}
+      <p>{{feature.name}} {{feature.id}}</p>
+  {{/link-to}}
+{{/each}}
